@@ -5,8 +5,8 @@
 A standardised approach for developing AngularJS applications in teams. This styleguide touches on concepts, syntax, conventions.
 
 #### Inspiration
-> [Todd Motto](https://github.com/toddmotto/angularjs-styleguide) - Original
-> [John Papa](https://github.com/johnpapa/angular-styleguide)
+  - [Todd Motto](https://github.com/toddmotto/angularjs-styleguide) - original
+  - [John Papa](https://github.com/johnpapa/angular-styleguide)
 
 ## Table of Contents
 
