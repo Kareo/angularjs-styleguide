@@ -18,7 +18,7 @@ A standardised approach for developing AngularJS applications in teams. This sty
   1. [Angular wrapper references](#angular-wrapper-references)
 
 ## Modules
-[Style [Y001](#style-y001)]
+
   - **Definitions**: Declare modules without a variable using the setter and getter syntax
 
     ```javascript
@@ -37,7 +37,7 @@ A standardised approach for developing AngularJS applications in teams. This sty
 **[Back to top](#table-of-contents)**
 
 ## Controllers
-[Style [Y010](#style-y010)]
+
   - **Presentational logic only (MVVM)**: Presentational logic only inside a controller, avoid Business logic (delegate to Services)
 
     ```javascript
@@ -85,7 +85,7 @@ A standardised approach for developing AngularJS applications in teams. This sty
 **[Back to top](#table-of-contents)**
 
 ## Services and Factory
-  [Style [Y020](#style-y020)]
+
   - All Angular Services are singletons, using `.service()` or `.factory()` differs the way Objects are created.
 
   **Services**: act as a `constructor` function and are instantiated with the `new` keyword. Use `this` for public methods and variables
@@ -122,7 +122,7 @@ A standardised approach for developing AngularJS applications in teams. This sty
 **[Back to top](#table-of-contents)**
 
 ## Directives
-  [Style [Y030](#style-y030)]
+
   - **Declaration restrictions**: Only use `custom element` and `custom attribute` methods for declaring your Directives (`{ restrict: 'EA' }`) depending on the Directive's role
 
     ```html
@@ -138,7 +138,7 @@ A standardised approach for developing AngularJS applications in teams. This sty
     ```
 
   - Comment and class name declarations are confusing and should be avoided. Comments do not play nicely with older versions of IE. Using an attribute is the safest method for browser coverage.
-  [Style [Y031](#style-y031)]
+
   - **DOM manipulation**: Takes place only inside Directives, never a controller/service
 
     ```javascript
@@ -171,7 +171,7 @@ A standardised approach for developing AngularJS applications in teams. This sty
 **[Back to top](#table-of-contents)**
 
 ## Publish and subscribe events
-  [Style [Y040](#style-y040)]
+
   - **$scope**: Use the `$emit` and `$broadcast` methods to trigger events to direct relationship scopes only
 
     ```javascript
@@ -201,7 +201,7 @@ A standardised approach for developing AngularJS applications in teams. This sty
 
 
 ## Angular wrapper references
-  [Style [Y050](#style-y050)]
+
   - **$document and $window**: Use `$document` and `$window` at all times to aid testing and Angular references
 
     ```javascript
