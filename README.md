@@ -20,9 +20,11 @@ A standardised approach for developing AngularJS applications in teams. This sty
 
 ## Layout
 
-  - Files grouped by component and near related files.
-  1. [Angular Doc](https://docs.google.com/document/d/1XXMvReO8-Awi1EZXAXS4PzDzdNvV6pGcuaF4Q9821Es/pub)
-  2. [John Papa App Structure](https://github.com/johnpapa/angular-styleguide#application-structure-lift-principle)
+  * Files grouped by component and near related files.
+  * One component per file
+  * [Angular Doc](https://docs.google.com/document/d/1XXMvReO8-Awi1EZXAXS4PzDzdNvV6pGcuaF4Q9821Es/pub)
+  * [John Papa App Structure](https://github.com/johnpapa/angular-styleguide#application-structure-lift-principle)
+
 ```
 src/
 --app.js
@@ -30,12 +32,13 @@ src/
 --app.scss
 --index.jade
 ---- home/
------- _home.scss
 ------ homeController.js
 ------ homeService.js
+------ homeService.spec.js
 ------ homeService.mock.spec.js
 ------ homeView.jade
 ---- about/
+------ _about.scss
 ------ aboutController.js
 ------ aboutService.js
 ------ aboutService.mock.spec.js
