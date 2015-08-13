@@ -1,11 +1,11 @@
 # AngularJS styleguide
 
-*Opinionated AngularJS styleguide for teams by [@toddmotto](//twitter.com/toddmotto)*
+*Opinionated AngularJS styleguide for teams*
 
 A standardised approach for developing AngularJS applications in teams. This styleguide touches on concepts, syntax, conventions.
 
 #### Inspiration
-> [original](https://github.com/toddmotto/angularjs-styleguide)
+> [original](https://github.com/toddmotto/angularjs-styleguide) by Todd Motto
 
 ## Table of Contents
 
@@ -14,12 +14,8 @@ A standardised approach for developing AngularJS applications in teams. This sty
   1. [Services and Factory](#services-and-factory)
   1. [Directives](#directives)
   1. [Filters](#filters)
-  1. [Routing resolves](#routing-resolves)
   1. [Publish and subscribe events](#publish-and-subscribe-events)
-  1. [Performance](#performance)
   1. [Angular wrapper references](#angular-wrapper-references)
-  1. [Comment standards](#comment-standards)
-  1. [Minification and annotation](#minification-and-annotation)
 
 ## Modules
 
