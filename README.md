@@ -117,7 +117,7 @@ src/
   - All Angular Services are singletons, using `.service()` or `.factory()` differs the way Objects are created.
 
   **Services**: act as a `constructor` function and are instantiated with the `new` keyword. Use `this` for public methods and variables
-
+  
     ```javascript
     function SomeService () {
       this.someMethod = function () {
@@ -130,8 +130,6 @@ src/
     ```
 
   **Factory**: Business logic or provider modules, return an Object or closure
-
-  - Always return a host Object instead of the revealing Module pattern due to the way Object references are bound and updated
 
     ```javascript
     function AnotherService () {
@@ -146,6 +144,22 @@ src/
       .module('app')
       .factory('AnotherService', AnotherService);
     ```
+
+- **Data Access** : Don't leak Http Promise.  Resolve with data.
+  ```javascript
+  //avoid
+  return $http(...);
+  ... controller:
+  svc.get().success(function(data){}
+  
+  //recommended
+  $http(...)
+  .then(function(response){
+    return response.data;
+  });
+  ```
+ 
+- **Mocks** : Mock data access services.  Allow tests to override returns and prevent unexpected get requests.
 
 **[Back to top](#table-of-contents)**
 
