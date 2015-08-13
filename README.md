@@ -10,12 +10,37 @@ A standardised approach for developing AngularJS applications in teams. This sty
 
 ## Table of Contents
 
+  1. [Layout](#layout)
   1. [Modules](#modules)
   1. [Controllers](#controllers)
   1. [Services and Factory](#services-and-factory)
   1. [Directives](#directives)
   1. [Publish and subscribe events](#publish-and-subscribe-events)
   1. [Angular wrapper references](#angular-wrapper-references)
+
+## Layout
+
+  - Files grouped by component and near related files.
+  1. [Angular Doc](https://docs.google.com/document/d/1XXMvReO8-Awi1EZXAXS4PzDzdNvV6pGcuaF4Q9821Es/pub)
+  2. [John Papa App Structure](https://github.com/johnpapa/angular-styleguide#application-structure-lift-principle)
+```
+src/
+--app.js
+--app.spec.js
+--app.scss
+--index.jade
+---- home/
+------ _home.scss
+------ homeController.js
+------ homeService.js
+------ homeService.mock.spec.js
+------ homeView.jade
+---- about/
+------ aboutController.js
+------ aboutService.js
+------ aboutService.mock.spec.js
+------ aboutView.jade
+```
 
 ## Modules
 
