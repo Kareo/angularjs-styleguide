@@ -13,7 +13,6 @@ A standardised approach for developing AngularJS applications in teams. This sty
   1. [Controllers](#controllers)
   1. [Services and Factory](#services-and-factory)
   1. [Directives](#directives)
-  1. [Filters](#filters)
   1. [Publish and subscribe events](#publish-and-subscribe-events)
   1. [Angular wrapper references](#angular-wrapper-references)
 
